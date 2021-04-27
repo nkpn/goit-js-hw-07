@@ -17,12 +17,19 @@ const itemQuantity = listEl.length;
 
 console.log(`В списке ${itemQuantity} категории.`)
 
-for (let i = 0; i < listEl.length; i++) {
-    const heading = listEl[i].querySelector('h2');
+// for (let i = 0; i < listEl.length; i++) {
+//     const heading = listEl[i].querySelector('h2');
+//     console.log(heading.textContent);
+
+//     const liQuantity = listEl[i].querySelectorAll('li').length;
+//     console.log(`Количество элементов: ${liQuantity}`)
+// }
+
+listEl.forEach(list => {
+    const heading = list.querySelector('h2');
     console.log(heading.textContent);
 
-    const liQuantity = listEl[i].querySelectorAll('li').length;
+    const liQuantity = list.querySelectorAll('li').length;
     console.log(`Количество элементов: ${liQuantity}`)
-}
-
+})
 

@@ -7,5 +7,4 @@ const changeFontSize = (event) => {
 }
 
 
-
-input.addEventListener('change', changeFontSize)
+input.addEventListener('input', changeFontSize)

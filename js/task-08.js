@@ -14,7 +14,7 @@ const createDiv = (event) => {
     let num = Number(input.value);
     const ArrayEl = [];
     
-    for (let i = 0; i <= num; i++){
+    for (let i = 0; i < num; i++){
         const divEl = document.createElement('div');
         divEl.style.backgroundColor = `RGB(
             ${randomColor(0, 255)},

@@ -10,10 +10,22 @@ const ingredients = [
 ];
 
 const listEl = document.getElementById('ingredients');
+const arrayEl = [];
+
+// const newArray = ingredients.map((el) => {
+//   const liEl = document.createElement('li');
+//   liEl.textContent = ingredients;
+//   console.log(ingredients);
+//   arrayEl.push(liEl);
+// })
+
+
 
 for (let i = 0; i < ingredients.length; i++){
-    const liEl = document.createElement('li');
-    liEl.textContent = ingredients[i];
-    console.log(ingredients[i]);
-    listEl.appendChild(liEl);
+  const liEl = document.createElement('li');
+  liEl.textContent = ingredients[i];
+  //listEl.appendChild(liEl);
+  arrayEl.push(liEl);
 }
+
+listEl.append(...arrayEl);

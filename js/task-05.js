@@ -7,12 +7,24 @@ console.log(output);
 
 input.addEventListener('input', onInputChange);
 
+//* Было
+// function onInputChange(event) {
+//     if (input.value === '') {
+//         console.log('empty');
+//         return output.textContent = 'незнакомец'
+//     }
+
+//     output.textContent = event.currentTarget.value;
+    
+// }
+
+
+//* Стало
 function onInputChange(event) {
     if (input.value === '') {
-        console.log('empty');
-        return output.textContent = 'незнакомец'
-    }
+        output.textContent = 'незнакомец'
+        return
+    }   
 
     output.textContent = event.currentTarget.value;
-    
 }
